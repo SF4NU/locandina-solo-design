@@ -1,0 +1,60 @@
+body {
+  
+}
+.tomato,
+.imdb {
+  height: 2rem;
+}
+section {
+  display: flex;
+  position: relative;
+  place-content: center;
+  padding: 25px;
+}
+.main-div-grid {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid ;
+  height: 600px;
+  width: 600px;
+}
+.info-div {
+  border: 1px solid;
+  text-align: center;
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  
+}
+.poster-wrap {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.horizontal-top-div {
+  display: flex;
+}
+.plot-div {
+  display: flex;
+  flex-direction: column;
+  place-items: center
+}
+.bottom-div-grid {
+  display: flex;
+  flex-direction: column;
+}
+.reviews {
+  display: flex;
+  justify-content: space-around;
+}
+.year-duration {
+  display: flex;
+  place-content: center;
+}
+.poster {
+  height: 80%;
+}
