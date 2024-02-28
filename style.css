@@ -1,5 +1,13 @@
 body {
-  
+  background-color: #1E2019;
+  font-family: poppins;
+}
+:root {
+  --electric-indigo-color: #5e00f5;
+  --text-color: #e6f6ff;
+  --persian-indigo-color: #2f007b;
+  --russian-violet-color: #18003e;
+  --yellow-color: #F5BB00;
 }
 .tomato,
 .imdb {
@@ -12,40 +20,105 @@ section {
   padding: 25px;
 }
 .main-div-grid {
+  border: 5px solid red;
   display: flex;
   flex-direction: column;
-  border: 1px solid ;
+  align-items: center;
+  justify-content: center;
   height: 600px;
   width: 600px;
+  background-color: var(--persian-indigo-color);
+  color: var(--text-color);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.main-div-grid::after {
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  z-index: 1;
+  opacity: 0.95;
+  background-color: var(--persian-indigo-color);
+  border-radius: 30px;
+  transform: translateX(-600px);
+  animation: animation1 1s ease forwards 1;
+  background-color: var(--russian-violet-color);
+}
+.main-div-grid::before {
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  z-index: 1;
+  opacity: 0.95;
+  background-color: var(--persian-indigo-color);
+  border-radius: 30px;
+  transform: translateY(-600px);
+  animation: animation2 1s ease forwards 1;
+  background-color: var(--electric-indigo-color);
+  animation-delay: 
+  0.2s;
+}
+@keyframes animation1 {
+  100% {
+  transform: translateX(600px);
+  }
+}
+@keyframes animation2 {
+  100% {
+    transform: translateY(600px);
+  }
 }
 .info-div {
-  border: 1px solid;
   text-align: center;
-  height: 80%;
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   place-content: center;
-  
+  background-color: var(--yellow-color);
+  color: var(--persian-indigo-color);
+  border-radius: 20px;
+  min-height: 200px;
+  max-height: 100%;
+  padding: 20px;
+}
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 .poster-wrap {
   width: 50%;
-  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--electric-indigo-color);
+  border-radius: 20px;
+  position: relative;
 }
+
 .horizontal-top-div {
   display: flex;
+  height: 350px;
 }
 .plot-div {
   display: flex;
   flex-direction: column;
-  place-items: center
-}
-.bottom-div-grid {
-  display: flex;
-  flex-direction: column;
+  place-items: center;
+  background-color: var(--electric-indigo-color);
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  min-height: 120px;
+  max-height: 200px;
+  box-sizing: border-box;
+  padding: 20px;
 }
 .reviews {
   display: flex;
@@ -57,4 +130,7 @@ section {
 }
 .poster {
   height: 80%;
+}
+.title {
+  
 }

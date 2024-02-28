@@ -5,40 +5,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Locandina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <section class="locandina">
     <div class="main-div-grid">
+      <div class="search-div">
+        <input type="text">
+        <button></button>
+      </div>
       <div class="horizontal-top-div">
-        <div class="info-div">
-          <div>
-            <p>Iron Man</p>
-          </div>
-          <div class="year-duration">
+        <div class="info-wrapper">
+          <div class="info-div">
             <div>
-              <p>Year: 2008</p>
+              <p class="title">Iron Man</p>
+            </div>
+            <div class="year-duration">
+              <div>
+                <p class="year">Year: 2008</p>
+              </div>
+              <div>
+                <p class="runtime">Runtime: 126 min</p>
+              </div>
+            </div>
+            <div class="actors">
+              <span>Robert Downey Jr.</span>
+              <span>Gwyneth Paltrow</span>
+              <span>Terrence Howard</span>
             </div>
             <div>
-              <p>Runtime: 126 min</p>
+              <span>Action</span>
+              <span>Adventure</span>
+              <span>Sci-fi</span>
             </div>
-          </div>
-          <div>
-            <p>Robert Downey Jr., Gwyneth Paltrow, Terrence Howard</p>
-          </div>
-          <div>
-            <span>Action</span>
-            <span>Adventure</span>
-            <span>Sci-fi</span>
           </div>
         </div>
         <div class="poster-wrap"><img class="poster" src="ironman.jpg"></div>
       </div>
       <div bottom-div-grid>
         <div class="plot-div">
-          <span>Plot:</span><p>"After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.</p>
+          <span class="plot">Plot:</span><p>"After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.</p>
         </div>
         <div class="reviews">
           <div>
